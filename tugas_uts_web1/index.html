@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card" style="max-width:560px;margin:34px auto;padding:22px">
+      <header class="header" style="margin-bottom:10px">
+        <div class="brand">
+          <img class="logo" src="assets/logo.jpg" alt="logo" />
+          <div class="title">
+            <h1>Toko Buku Online</h1>
+            <div class="muted">Sistem Pemesanan - UTS Pemrograman Web</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a class="btn ghost" href="stok.html">Lihat Katalog</a>
+        </nav>
+      </header>
+
+      <form id="loginForm" style="margin-top:6px">
+        <div class="form-row">
+          <div style="flex:1">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="email@contoh.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div style="flex:1">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="password" required />
+          </div>
+        </div>
+
+        <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+          <button class="btn" type="submit">Login</button>
+          <button class="btn secondary" type="button" id="btnForgot">Lupa Password</button>
+          <button class="btn ghost" type="button" id="btnRegister">Daftar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

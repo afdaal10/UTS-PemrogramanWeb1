@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Checkout - Toko Buku</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="brand">
+        <img class="logo" src="assets/logo.jpg" alt="logo" />
+        <div class="title">
+          <h1>Pemesanan</h1>
+          <div class="muted">Buat dan ubah pesanan</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="btn" href="dashboard.html">Kembali</a>
+        <a class="btn ghost" href="index.html">Logout</a>
+      </nav>
+    </header>
+
+    <section class="card">
+      <h3>Pilih Buku</h3>
+      <div id="bookList" style="margin:8px 0"></div>
+
+      <hr>
+
+      <h3>Keranjang</h3>
+      <table class="table" id="cartTable" aria-live="polite">
+        <thead><tr><th>Judul</th><th>Harga</th><th>Jumlah</th><th>Subtotal</th><th>Aksi</th></tr></thead>
+        <tbody></tbody>
+      </table>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+        <div><h4>Total: <span id="totalAmount">Rp0</span></h4></div>
+        <div><button id="btnCheckout" class="btn">Lanjut ke Pembayaran</button></div>
+      </div>
+
+      <div id="checkoutFormWrap" style="display:none;margin-top:12px">
+        <h3>Data Pemesan & Pembayaran</h3>
+        <form id="checkoutForm">
+          <div class="form-row">
+            <input id="pNama" type="text" placeholder="Nama Pemesan" required />
+            <input id="pEmail" type="email" placeholder="Email" required />
+          </div>
+          <div class="form-row">
+            <input id="pAlamat" type="text" placeholder="Alamat Lengkap" required />
+            <input id="pTelp" type="text" placeholder="No. Telepon" required />
+          </div>
+          <div class="form-row">
+            <select id="pPembayaran" required>
+              <option value="">-- Metode Pembayaran --</option>
+              <option value="transfer">Transfer Bank</option>
+              <option value="cod">COD</option>
+              <option value="e-wallet">E-Wallet</option>
+            </select>
+            <input id="pNote" type="text" placeholder="Catatan (opsional)" />
+          </div>
+
+          <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:10px">
+            <button type="submit" class="btn">Submit Pesanan</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

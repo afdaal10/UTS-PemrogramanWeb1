@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Dashboard - Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="brand">
+       <img class="logo" src="assets/logo.jpg" alt="logo" />
+        <div class="title">
+          <h1>Dashboard</h1>
+          <div id="greetingText" class="muted">Halo</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="btn" href="stok.html">Katalog</a>
+        <a class="btn" href="checkout.html">Pemesanan</a>
+        <a class="btn" href="tracking.html">Tracking</a>
+        <a class="btn ghost" href="index.html">Logout</a>
+      </nav>
+    </header>
+
+    <section class="card">
+      <h3>Menu Utama</h3>
+      <p class="text-muted">Silakan pilih menu untuk melanjutkan.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px">
+        <div class="card">
+          <h4>Informasi Stok</h4>
+          <p class="text-muted">Melihat katalog buku dan menambah stok baru.</p>
+          <a class="btn" href="stok.html">Buka</a>
+        </div>
+
+        <div class="card">
+          <h4>Tracking Pengiriman</h4>
+          <p class="text-muted">Cari status pengiriman berdasarkan Nomor DO.</p>
+          <a class="btn" href="tracking.html">Buka</a>
+        </div>
+
+        <div class="card">
+          <h4>Pemesanan / Checkout</h4>
+          <p class="text-muted">Buat / edit pemesanan dan data pembayaran.</p>
+          <a class="btn" href="checkout.html">Buka</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

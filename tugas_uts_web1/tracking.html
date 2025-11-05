@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Tracking - Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="brand">
+       <img class="logo" src="assets/logo.jpg" alt="logo" />
+        <div class="title">
+          <h1>Tracking Pengiriman</h1>
+          <div class="muted">Cek status paket berdasarkan Nomor DO</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="btn" href="dashboard.html">Kembali</a>
+        <a class="btn ghost" href="index.html">Logout</a>
+      </nav>
+    </header>
+
+    <section class="card">
+      <form id="trackingForm" style="display:flex;gap:8px;align-items:center">
+        <input id="inputDO" type="text" placeholder="Masukkan Nomor Delivery Order (mis. DO-2025001)" required />
+        <button class="btn" type="submit">Cari</button>
+      </form>
+
+      <div id="trackingResult" style="margin-top:14px;display:none">
+        <h4>Hasil Pencarian</h4>
+        <div class="card">
+          <p><strong>Nama Pemesan:</strong> <span id="trkNama"></span></p>
+          <p><strong>Nomor DO:</strong> <span id="trkDO"></span></p>
+          <p><strong>Ekspedisi:</strong> <span id="trkEkspedisi"></span> — <span id="trkJenis"></span></p>
+          <p><strong>Tanggal Kirim:</strong> <span id="trkTgl"></span></p>
+          <p><strong>Total Pembayaran:</strong> Rp<span id="trkTotal"></span></p>
+
+          <div style="margin-top:12px">
+            <strong>Status Pengiriman:</strong>
+            <div class="progress" aria-hidden="true" style="margin-top:8px">
+              <span id="trkProgress" style="width:0%"></span>
+            </div>
+            <div style="margin-top:8px;color:var(--muted)" id="trkStatusText"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

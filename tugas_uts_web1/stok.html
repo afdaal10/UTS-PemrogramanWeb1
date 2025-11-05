@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Stok / Katalog - Toko Buku</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="brand">
+        <img class="logo" src="assets/logo.jpg" alt="logo" />
+        <div class="title">
+          <h1>Katalog Buku</h1>
+          <div class="muted">Informasi stok dan katalog</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="btn" href="dashboard.html">Kembali</a>
+        <a class="btn ghost" href="index.html">Logout</a>
+      </nav>
+    </header>
+
+    <section class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h3>Daftar Buku</h3>
+        <button id="btnTambahStok" class="btn">Tambah Baris Stok</button>
+      </div>
+
+      <div id="catalogGrid" class="catalog-grid"></div>
+
+      <hr style="margin:16px 0">
+
+      <h4>Tambah Manual Stok (Form)</h4>
+      <form id="addStockForm">
+        <div class="form-row">
+          <input id="newId" type="text" placeholder="ID Buku (mis. B010)" required />
+          <input id="newJudul" type="text" placeholder="Judul Buku" required />
+          <input id="newPenulis" type="text" placeholder="Penulis" required />
+        </div>
+        <div class="form-row">
+          <input id="newHarga" type="number" placeholder="Harga (Rp)" required />
+          <input id="newStok" type="number" placeholder="Stok" required />
+          <input id="newCover" type="text" placeholder="URL cover (mis. img/buku6.png) (opsional)" />
+        </div>
+        <div>
+          <button class="btn" type="submit">Tambah Stok</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
