@@ -150,6 +150,7 @@ Sebagai pusat kontrol pengguna.
 - Barang yang dipilih
 - Total harga
 - Input nama & alamat
+  
 **Saat konfirmasi:**
   
 - Data dimasukkan ke dataPesanan
@@ -170,7 +171,7 @@ Sebagai pusat kontrol pengguna.
 - Alamat
 - Nomor Delivery Order
 - Status (dummy)
-- 
+  
 **Tujuan:**
 Mensimulasikan tracking kurir / proses pengiriman.
 
@@ -182,14 +183,14 @@ Mensimulasikan tracking kurir / proses pengiriman.
 
 ## Alur Pemesanan ##
 
-**1. Login lewat index.html**
-**2. Masuk ke dashboard**
-**3. Klik “Lihat Katalog”**
-**4. Pilih buku dan klik Tambah ke Keranjang**
-**5. Buka checkout**
-**6. Isi data pemesan**
-**7. Konfirmasi pesanan**
-**8. Lihat tracking status**
+- Login lewat index.html
+- Masuk ke dashboard
+- Klik “Lihat Katalog”
+- Pilih buku dan klik Tambah ke Keranjang
+- Buka checkout
+- Isi data pemesan
+- Konfirmasi pesanan
+- Lihat tracking status
 
 ## Penjelasan File Berdasarkan Folder ##
 **1. /css/style.css**
