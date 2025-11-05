@@ -33,3 +33,24 @@ Proyek ini adalah aplikasi toko buku sederhana untuk tugas UTS Pemrograman Web 1
 
 ## Struktur folder proyek
 
+```
+TUGAS_UTS_WEB1/
+├─ assets/
+│ └─ logo.png
+├─ css/
+│ └─ style.css
+├─ img/
+│ ├─ buku1.png
+│ ├─ buku2.png
+│ └─ ...
+├─ js/
+│ ├─ data.js ← data katalog & pesanan & akun demo
+│ └─ main.js ← logika utama (render catalog, cart, checkout, tracking)
+├─ index.html ← halaman login
+├─ dashboard.html
+├─ stok.html ← daftar buku / tambah stok
+├─ checkout.html
+├─ tracking.html
+└─ README.md
+```
+
