@@ -156,7 +156,7 @@ Sebagai pusat kontrol pengguna.
 - Data dimasukkan ke dataPesanan
 - Stok otomatis dikurangi
 - Redirect ke tracking.html
-- 
+
 **Screenshot checkout**
 
 ![Checkout](screenshots/checkout-page.png)
