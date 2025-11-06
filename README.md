@@ -55,9 +55,9 @@ TUGAS_UTS_WEB1/
 ```
 
 
-**Screenshot struktur folder (tempelkan file `screenshots/project-structure.png`):**
+**Screenshot struktur folder**
 
-![Struktur Project](screenshots/project-structure.png)
+![Struktur Project](stuktur_folder.png)
 
 ---
 
