@@ -91,7 +91,7 @@ Mengamankan akses ke halaman internal.
 
 **Screenshot halaman login**
 
-![Halaman Login](screenshots/index-page.png)
+![Halaman Login](tampilan_login.png)
 
 ---
 
@@ -108,7 +108,7 @@ Sebagai pusat kontrol pengguna.
 
 **Screenshot dashboard**
 
-![Dashboard](screenshots/dashboard-page.png)
+![Dashboard](dashboard.png)
 
 ---
 
@@ -140,7 +140,7 @@ Sebagai pusat kontrol pengguna.
 
 **Screenshot katalog**
 
-![Katalog Buku](screenshots/stok-page.png)
+![Katalog Buku](katalog.png)
 
 ---
 
@@ -159,7 +159,7 @@ Sebagai pusat kontrol pengguna.
 
 **Screenshot checkout**
 
-![Checkout](screenshots/checkout-page.png)
+![Checkout](pemesanan.png)
 
 ---
 
@@ -177,7 +177,7 @@ Mensimulasikan tracking kurir / proses pengiriman.
 
 **Screenshot tracking**
 
-![Tracking](screenshots/tracking-page.png)
+![Tracking](tracking.png)
 
 ---
 
